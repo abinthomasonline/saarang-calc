@@ -2,5 +2,5 @@
 Calc using angularJS for Saarang App
 
 > Simple calculator
-> Binary Operations +-/*
+> Binary Operations /*+-
 > Obeys precedance rules
