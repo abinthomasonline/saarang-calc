@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Saarang Calc
+		</title>
+
+		<!-- style sheets and fonts-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+		<!-- angular cdn-->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+		</script>
+	</head>
+
+	<body>
+		<!-- angular modules and controllers -->
+
+		<script>
+			var app=angular.module("calc",[]);
+		</script>
+
+		<script src="js/controllers.js">
+		</script>
+
+		<div ng-app="calc" ng-controller="calccontroller">
+			<div>
+				<h1 id="header">Saarang Calc</h1>
+			</div>
+
+			<div>
+				<div id="calccontainer">
+					<!-- calc display -->
+					<div id="displaycontainer">
+						<div id="exprcontainer">
+							<p>
+								{{expr}}
+							</p>
+						</div>
+						<div id="resultcontainer">
+							<p>
+								{{result}}
+							</p>
+						</div>
+					</div>
+					<!-- calc buttons -->
+					<div id="buttonscontainer">
+						<div id="leftsetbuttons">
+							<!-- editexpr() to edit the expression as button is clicked-->
+							<div class="calcbutton" ng-click="editexpr('7')">
+								<h1>7</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('8')">
+								<h1>8</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('9')">
+								<h1>9</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('4')">
+								<h1>4</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('5')">
+								<h1>5</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('6')">
+								<h1>6</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('1')">
+								<h1>1</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('2')">
+								<h1>2</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('3')">
+								<h1>3</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('.')">
+								<h1>.</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('0')">
+								<h1>0</h1
+							></div
+							><div class="calcbutton" ng-click="editexpr('=')">
+								<h1>=</h1
+							></div
+						></div
+						><div id="rightsetbuttons">
+							<div class="calcbutton5" ng-click="editexpr('c')"><h1>C</h1
+							></div
+							><div class="calcbutton5"  ng-click="editexpr('&divide;')"><h1>&divide;</h1
+							></div
+							><div class="calcbutton5" ng-click="editexpr('&times;')"><h1>&times;</h1
+							></div
+							><div class="calcbutton5" ng-click="editexpr('-')"><h1>-</h1
+							></div
+							><div class="calcbutton5" ng-click="editexpr('+')"><h1>+</h1
+							></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
